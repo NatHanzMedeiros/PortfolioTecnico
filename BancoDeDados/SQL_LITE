@@ -1,0 +1,28 @@
+CREATE TABLE Cliente(
+Nome VARCHAR (50) NOT NULL,
+CPF VARCHAR (11) not NULL,
+WHATSAPP int NOT NULL,
+Produtos_Consumidos int NOT NULL,
+
+PRIMARY KEY (CPF))
+
+CREATE TABLE Produto(
+  Preço int NOT NULL,
+  Ingredientes VARCHAR (50) NOT NULL,
+  Tipo VARCHAR (50) NOT NULL,
+  Nome VARCHAR (50) NOT NULL,
+  ID VARCHAR (10) NOT NULL,
+  CPFVEDENDOR VARCHAR (11) NOT NULL,
+  CPFCLIENTE VARCHAR (11) NOT NULL,
+  
+  PRIMARY KEY (ID))
+  
+  CREATE TABLE Vendedor(
+    Nome VARCHAR (50) NOT NULL,
+    Salario int NOT NULL,
+    Telefone int NOT NULL,
+    CPF VARCHAR (11) NOT NULL,
+    Vendas int NOT NULL,
+    
+    PRIMARY KEY (CPF))
+    
