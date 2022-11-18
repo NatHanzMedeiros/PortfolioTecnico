@@ -1,0 +1,28 @@
+CREATE table Vendedor(
+Nome VARCHAR(50)not null,
+CPF VARCHAR(14)not null,
+Telefone VARCHAR(15),
+salario VARCHAR(10)not null,
+PRIMARY KEY(Cpf)
+)
+CREATE TABLE Cliente(
+Nome VARCHAR(50)not null,
+CPF VARCHAR(14)not NULL,
+nWhatsapp VARCHAR(20),
+Produtos_consumidos VARCHAR(20)not NULL,
+PRIMARY KEY(Cpf)
+)
+CREATE TABLE Produto(
+Tipo VARCHAR(10)not NULL,
+Ingrediantes VARCHAR(20)not NULL,
+Nome VARCHAR(15)not NULL,
+Preço INT not NULL,
+Identificador INT not null,
+CPF_Vendedor VARCHAR(14)NOT NULL,
+CPF_Cliente VARCHAR(14)not null,
+PRIMARY KEY(Identificador),
+FOREIGN KEY (CPF_Vendedor)
+REFERENCES Vendedor (CPF_Vendedor),
+FOREIGN KEY (CPF_Cliente)
+REFERENCES Cliente (CPF_Cliente)
+)
