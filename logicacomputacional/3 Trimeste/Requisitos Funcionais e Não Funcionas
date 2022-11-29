@@ -1,0 +1,28 @@
+Requisitos funcionais:
+Cadastrar clientes para academia Fiesc. Mostrando campos para cadastro, como por
+exemplo:
+- Colocar seu Nome;
+- Colocar seu CPF;
+- Colocar sua Matrícula;
+- Colocar seu E-mail;
+Também terá os seguintes botões com opções em relação ao sistema de cadastramento:
+- Cadastrar; Com todos os campos preenchidos, basta clicar em cadastrar que seu
+usuário ficará salvo.
+- Editar; Em editar, ele pedirá a matrícula do aluno que deseja editar. Após digitar a
+matrícula certa, ele lhe mostra qual informação deseja editar, caso digite a matrícula
+errada, o programa mostrará uma janela informando que a informação está
+incorreta.
+- Listar; Esta opção irá listar todos os alunos cadastrados em ordem cronológica.
+- Excluir; Basta digitar a matrícula do aluno e ele exclui o aluno.
+
+Requisitos não funcionais:
+O sistema foi programado em java
+O programa será somente para computador
+As informações serão salvas no ArrayList
+Design
+Não necessário estar conectado na Internet
+Programação simples
+Hardware simples para rodar
+Informações salvo na RAM
+Software Intuitivo
+Pode ser usado em qualquer computador que possua JAVA instalado
