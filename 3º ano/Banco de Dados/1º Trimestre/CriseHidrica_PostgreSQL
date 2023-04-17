@@ -1,0 +1,60 @@
+CREATE TABLE usuario (
+  nome TEXT NOT NULL,
+  login TEXT NOT NULL,
+  senha VARCHAR(8) NOT NULL,
+  id_notificacao_fk VARCHAR(8) NOT NULL,
+  PRIMARY KEY (login),
+  FOREIGN KEY (id_notificacao_fk) REFERENCES notificacao(id_notificacao_pk)
+  )
+  INSERT INTO usuario (
+  nome,login,senha,id_notificacao_fk)
+  VALUES ('Nathan','hanz','12345678')
+  SELECT *FROM usuario
+
+  CREATE TABLE notificacao (
+  estados TEXT NOT NULL,
+  cidades TEXT NOT NULL,
+  metas TEXT NOT null,
+  analisador TEXT NOT NULL,  
+  notificador TEXT NOT NULL,
+  identificador INT not NULL,
+  id_notificacao_pk VARCHAR(8) NOT NULL,
+  id_graficos_fk VARCHAR(8) NOT NULL,
+    PRIMARY KEY (id_notificacao_pk),
+    FOREIGN KEY (id_graficos_fk) REFERENCES graficos(id_graficos_pk)
+  )
+  INSERT INTO notificacao (
+  estados,cidades,metas,analisador,notificador,identificador,id_notificacao_pk,id_graficos_fk)
+  VALUES ('SC,SP','Palhoça,Bertioga','economizar','sla','sla','1234','123','1234')
+  SELECT *FROM notificacao
+
+  CREATE TABLE graficos (
+  id_dados_fk VARCHAR(8) not NULL,
+  id_graficos_pk VARCHAR(8) NOT NULL,
+  qndUsoAgua TEXT NOT NULL,  
+  areaQueimada TEXT	NOT NULL,
+  areaDesmatada TEXT	NOT null,
+  areaOriginal TEXT	NOT null,
+    PRIMARY KEY (id_graficos_pk),
+    FOREIGN KEY (id_dados_fk) REFERENCES dados(id_dados_pk)
+  )	
+
+  INSERT INTO graficos (
+  id_dados_fk,id_graficos_pk,qndusoagua,areaqueimada,areadesmatada,areaoriginal)
+  VALUES ('10','9','100l','400m²','500m²','1000m²')
+  SELECT *FROM graficos
+
+
+  CREATE TABLE dados (
+  id_dados_pk VARCHAR(8) NOT NULL,
+  meteorologia TEXT not NULL,  
+  empresas TEXT NOT NULL,
+  satelites TEXT NOT NULL,
+  PRIMARY KEY (id_dados_pk)
+  )	
+  
+  INSERT INTO dados (
+  id_dados_pk,meteorologia,empresas,satelites)
+  VALUES ('2305','chuva','gasto excessivo','areas queimadas em:')
+  SELECT *FROM dados
+
