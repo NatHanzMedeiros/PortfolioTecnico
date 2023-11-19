@@ -1,0 +1,101 @@
+.vectorIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2610vh;
+  height: 1131vh;
+}
+.smartmockupsLn8ymt211Icon {
+  position: absolute;
+  top: 284vh;
+  left: 676vh;
+  width: 376vh;
+  height: 626vh;
+  object-fit: cover;
+}
+.petHubARede {
+  position: absolute;
+  top: 111vh;
+  left: 505vh;
+  font-size: 48vh;
+  font-weight: 600;
+  color: var(--color-white);
+}
+.clipboardIcon,
+.usersIcon {
+  position: absolute;
+  top: 900vh;
+  left: 1224vh;
+  width: 56vh;
+  height: 56vh;
+  overflow: hidden;
+}
+.clipboardIcon {
+  left: 676vh;
+}
+.o {
+  text-transform: capitalize;
+}
+.ngsEUsuarios {
+  text-transform: lowercase;
+}
+.ongsEUsuariosContainer {
+  position: absolute;
+  top: 968vh;
+  left: 681vh;
+  display: inline-block;
+  width: 386vh;
+}
+.f {
+  text-transform: uppercase;
+}
+.facilitandoAComunicaoContainer,
+.nossoObjetivoEContainer {
+  position: absolute;
+  top: 968vh;
+  left: 1223vh;
+  display: inline-block;
+  width: 356vh;
+}
+.nossoObjetivoEContainer {
+  left: 127vh;
+}
+.home,
+.vectorIcon1,
+.vectorIcon2 {
+  position: absolute;
+  top: 696.2vh;
+  left: 587.12vh;
+  width: 56vh;
+  height: 56vh;
+  overflow: hidden;
+}
+.vectorIcon1,
+.vectorIcon2 {
+  height: 4.54%;
+  width: 2.66%;
+  top: 81.02%;
+  right: 89.81%;
+  bottom: 14.44%;
+  left: 7.52%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.vectorIcon2 {
+  height: 2.45%;
+  width: 1.04%;
+  top: 83.11%;
+  right: 90.63%;
+  left: 8.33%;
+}
+.macbookPro161 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1117vh;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-montserrat);
+}
